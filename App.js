@@ -20,8 +20,8 @@ const App: () => Node = () => {
     async function checkLogginUser() {
       const isLogin = await getItemAsync('user');
       if (isLogin) {
-        // setInitialRouteName('Home');
-        // setLoading(false);
+        setInitialRouteName('Home');
+        setLoading(false);
       }
     }
     checkLogginUser();
